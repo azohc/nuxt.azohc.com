@@ -25,6 +25,7 @@ nav {
   display: flex;
   justify-content: flex-end;
 }
+
 nav > * {
   padding-left: 1em;
 }
@@ -45,7 +46,7 @@ nav > * {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    margin-top: 3rem;
+    margin-top: 2rem;
   }
 }
 </style>

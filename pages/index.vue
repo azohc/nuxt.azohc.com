@@ -6,7 +6,7 @@
   </main>
 </template>
 
-<style>
+<style scoped>
 h1 {
   font-size: 3.3rem;
 }

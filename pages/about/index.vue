@@ -1,7 +1,6 @@
-import DatedExperience from '~~/components/DatedExperience.vue';
-
 <template>
   <main>
+    <h1>about</h1>
     <section>
       <h2>education</h2>
       <hr />
