@@ -7,6 +7,7 @@
         <NuxtLink active-class="current-route" to="/projects"
           >projects</NuxtLink
         >
+        <NuxtLink active-class="current-route" to="/three">3d</NuxtLink>
       </nav>
     </header>
     <NuxtPage></NuxtPage>
