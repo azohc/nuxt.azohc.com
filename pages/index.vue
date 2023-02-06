@@ -10,9 +10,4 @@
 h1 {
   font-size: 3.3rem;
 }
-div.grid {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  row-gap: 1rem;
-}
 </style>
