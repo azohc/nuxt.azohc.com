@@ -1,0 +1,5 @@
+add META to pages
+
+put all routes on /, and when e.g. /about is accessed animate a scroll down to the section with #id about
+
+add GSAP type fade from bottom line with hidden overflow to different sections
