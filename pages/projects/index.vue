@@ -7,7 +7,7 @@
       <span>play and compete at snake</span>
       <a target="_blank" href="https://azohc.github.io/wat-do/">wat-do</a>
       <span>in case you're bored & dont know what to do</span>
-      <a target="_blank" href="https://azohcblog.vercel.app">blog</a>
+      <a target="_blank" href="https://remix-blog-peach.vercel.app">blog</a>
       <span>read about the lessons i've learnt as a developer</span>
     </div>
   </main>

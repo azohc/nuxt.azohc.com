@@ -10,8 +10,11 @@
         subheading="master of front-end development"
       >
         <p>
-          as of the end of 2022, i've learnt about vue.js (with the composition
-          api and nuxt 3.0) and design systems
+          as of the end of 2022, I've been working on design systems and vue
+          (with the composition api). since then, I have learnt to apply modern
+          web tooling to enhance the development process, and created small apps
+          with nuxt 3, react, nextjs 13, and remix. I'm currently diving deep
+          into nodejs, and up next is an angular course.
         </p>
       </DatedExperience>
       <DatedExperience
