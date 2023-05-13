@@ -47,7 +47,7 @@
       backend: java, spring, nginx, sql, maven, python, c++, nodejs
       <br />
       frontend: javascript, html, css, typescript, angular, vue, nuxt 3, react,
-      nextjs 13, remix, graphql
+      nextjs 13, remix, graphql, storybook
       <br />
       misc: git, bash, agile, jira, maven, junit, mockito, jest, testing
       library, tdd, hygraph
