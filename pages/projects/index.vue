@@ -6,17 +6,24 @@
       <a target="_blank" href="https://remix-blog-peach.vercel.app">blog</a>
       <span>read about the lessons i've learnt as a developer</span>
 
+      <a target="_blank" href="https://homepage-react.vercel.app/"
+        >homepage-v2</a
+      >
+      <span
+        >same dashboard concept, but with a more pronounced lean towards
+        styling</span
+      >
+
       <a
         target="_blank"
         href="https://spotify-replay-design-system.vercel.app/?path=/docs/introduction--docs"
         >spotify-replay</a
       >
-      <span>a combined effort to recreate spotify's design system</span>
-
-      <a target="_blank" href="https://homepage-react.vercel.app/"
-        >homepage-v2</a
+      <span
+        >a joint venture in recreating Spotify's design system, in collaboration
+        with <a href="https://abonet.me">Tony</a> and
+        <a href="https://www.rosejhh.dev">Rose</a></span
       >
-      <span>same concept but with a pronounced lean towards styling</span>
 
       <a target="_blank" href="https://azohc.github.io/mwt">homepage-v1</a>
       <span>a widget based dashboard to use as a home or new tab page</span>
