@@ -5,14 +5,25 @@
     <div class="grid">
       <a target="_blank" href="https://remix-blog-peach.vercel.app">blog</a>
       <span>read about the lessons i've learnt as a developer</span>
-      <a target="_blank" href="https://nuxt-js-boilerplate.vercel.app">snake</a>
-      <span>play, compete, stay alive</span>
+
       <a
         target="_blank"
         href="https://spotify-replay-design-system.vercel.app/?path=/docs/introduction--docs"
         >spotify-replay</a
       >
       <span>a combined effort to recreate spotify's design system</span>
+
+      <a target="_blank" href="https://homepage-react.vercel.app/"
+        >homepage-v2</a
+      >
+      <span>same concept but with a pronounced lean towards styling</span>
+
+      <a target="_blank" href="https://azohc.github.io/mwt">homepage-v1</a>
+      <span>a widget based dashboard to use as a home or new tab page</span>
+
+      <a target="_blank" href="https://nuxt-js-boilerplate.vercel.app">snake</a>
+      <span>play, compete, stay alive</span>
+
       <a target="_blank" href="https://azohc.github.io/wat-do/">wat-do</a>
       <span>in case you're bored & dont know what to do</span>
     </div>
