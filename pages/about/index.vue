@@ -44,11 +44,13 @@
     <section>
       <h2>technical skills</h2>
       <hr />
-      backend: java, spring, nginx, sql, maven, python, c++
+      backend: java, spring, nginx, sql, maven, python, c++, nodejs
       <br />
-      frontend: javascript, html, css, typescript, angular, vue
+      frontend: javascript, html, css, typescript, angular, vue, nuxt 3, react,
+      nextjs 13, remix, graphql
       <br />
-      misc: git, bash, agile, jira, maven, tdd
+      misc: git, bash, agile, jira, maven, junit, mockito, jest, testing
+      library, tdd, hygraph
     </section>
 
     <section>
