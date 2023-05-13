@@ -14,11 +14,7 @@
         styling</span
       >
 
-      <a
-        target="_blank"
-        href="https://spotify-replay-design-system.vercel.app/?path=/docs/introduction--docs"
-        >spotify-replay</a
-      >
+      <a target="_blank" href="https://abonet.me/re-play">spotify-replay</a>
       <span
         >a joint venture in recreating Spotify's design system, in collaboration
         with <a href="https://abonet.me">Tony</a> and
