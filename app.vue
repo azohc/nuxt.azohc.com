@@ -23,11 +23,8 @@
 
 nav {
   display: flex;
-  justify-content: flex-end;
-}
-
-nav > * {
-  padding-left: 1em;
+  justify-content: flex-start;
+  gap: 1rem;
 }
 
 .current-route {
@@ -46,7 +43,9 @@ nav > * {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    justify-content: flex-start;
     margin-top: 2rem;
+    gap: 0.5rem;
   }
 }
 </style>
