@@ -1,13 +1,68 @@
+<script setup lang="ts">
+const nameHeading = ref(null);
+const nameDiv = ref(null);
+let yOffset = 1;
+let zIndex = -1;
+let opacity = 0.88;
+
+const cloneRefs: HTMLDivElement[] = [];
+let spamInterval: NodeJS.Timer;
+
+const dosomething = () => {
+  spamInterval = setInterval(generateClones, 100);
+};
+
+const generateClones = () => {
+  if (!nameDiv.value || !nameHeading.value || opacity < 0.01) {
+    return;
+  }
+  const div = nameDiv.value as HTMLDivElement;
+  const heading = nameHeading.value as HTMLHeadingElement;
+
+  const { x, y } = div.getBoundingClientRect();
+  const clone = div.cloneNode(true) as HTMLDivElement;
+
+  clone.classList.add("cloned-name");
+  clone.style.left = `${x}px`;
+  clone.style.top = `${Math.floor(y) + yOffset}px`;
+  clone.style.zIndex = "" + zIndex;
+  clone.style.opacity = "" + opacity;
+
+  yOffset *= 1.33;
+  zIndex -= 1;
+  opacity *= 0.77;
+
+  heading.append(clone);
+  cloneRefs.push(clone);
+};
+
+let timeToRemove = 1100;
+const stop = () => {
+  clearInterval(spamInterval);
+  const executionBlock = [...cloneRefs].reverse();
+  executionBlock.forEach((clone, index) =>
+    setTimeout(() => clone.remove(), timeToRemove - 50 * index)
+  );
+  yOffset = 1;
+  opacity = 0.88;
+  timeToRemove = 1100;
+};
+</script>
+
 <template>
-  <!-- // TODO ADD ANIMATIONS! -->
   <main>
-    <h1>
+    <h1 ref="nameHeading">
       hi, I'm
-      <div class="name">
-        <img src="~/assets/svg/j-thick.svg" alt="j" />
-        <img src="~/assets/svg/u-thick-1.svg" alt="u" />
-        <img src="~/assets/svg/a-thick-1.svg" alt="a" />
-        <img src="~/assets/svg/n-thick.svg" alt="n" />
+      <div
+        ref="nameDiv"
+        class="name"
+        @mouseenter="dosomething"
+        @mouseleave="stop"
+      >
+        <img src="~/assets/svg/j-w-thick.svg" alt="j" />
+        <img src="~/assets/svg/u-w-thick-1.svg" alt="u" />
+        <img src="~/assets/svg/a-w-thick-1.svg" alt="a" />
+        <img src="~/assets/svg/n-w-thick.svg" alt="n" />
       </div>
     </h1>
 
@@ -21,10 +76,25 @@ h1 {
 }
 
 .name {
-  filter: invert();
+  display: inline-block;
 }
-
 .name > :nth-child(2) {
   transform: scale(0.88);
+}
+
+@keyframes sink {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(5px);
+  }
+}
+.cloned-name {
+  position: absolute;
+  animation: sink 3.3s;
+  animation-timing-function: cubic-bezier(0, 0, 0.58, 1);
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 </style>
