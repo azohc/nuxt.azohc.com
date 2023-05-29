@@ -59,10 +59,34 @@ const stop = () => {
         @mouseenter="dosomething"
         @mouseleave="stop"
       >
-        <img src="~/assets/svg/j-b-thick.svg" alt="j" />
-        <img src="~/assets/svg/u-b-thick-1.svg" alt="u" />
-        <img src="~/assets/svg/a-b-thick-1.svg" alt="a" />
-        <img src="~/assets/svg/n-b-thick.svg" alt="n" />
+        <picture>
+          <source
+            media="(prefers-color-scheme: light)"
+            srcset="~/assets/svg/j-dark.svg"
+          />
+          <img src="~/assets/svg/j-light.svg" alt="j" />
+        </picture>
+        <picture>
+          <source
+            media="(prefers-color-scheme: light)"
+            srcset="~/assets/svg/u-dark-1.svg"
+          />
+          <img src="~/assets/svg/u-light-1.svg" alt="u" />
+        </picture>
+        <picture>
+          <source
+            media="(prefers-color-scheme: light)"
+            srcset="~/assets/svg/a-dark-1.svg"
+          />
+          <img src="~/assets/svg/a-light-1.svg" alt="a" />
+        </picture>
+        <picture>
+          <source
+            media="(prefers-color-scheme: light)"
+            srcset="~/assets/svg/n-dark.svg"
+          />
+          <img src="~/assets/svg/n-light.svg" alt="n" />
+        </picture>
       </div>
     </h1>
 
@@ -80,12 +104,6 @@ h1 {
 }
 .name > :nth-child(2) {
   transform: scale(0.88);
-}
-
-@media (prefers-color-scheme: dark) {
-  .name {
-    filter: invert();
-  }
 }
 
 @keyframes sink {
