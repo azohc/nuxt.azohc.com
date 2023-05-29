@@ -59,10 +59,10 @@ const stop = () => {
         @mouseenter="dosomething"
         @mouseleave="stop"
       >
-        <img src="~/assets/svg/j-w-thick.svg" alt="j" />
-        <img src="~/assets/svg/u-w-thick-1.svg" alt="u" />
-        <img src="~/assets/svg/a-w-thick-1.svg" alt="a" />
-        <img src="~/assets/svg/n-w-thick.svg" alt="n" />
+        <img src="~/assets/svg/j-b-thick.svg" alt="j" />
+        <img src="~/assets/svg/u-b-thick-1.svg" alt="u" />
+        <img src="~/assets/svg/a-b-thick-1.svg" alt="a" />
+        <img src="~/assets/svg/n-b-thick.svg" alt="n" />
       </div>
     </h1>
 
@@ -80,6 +80,12 @@ h1 {
 }
 .name > :nth-child(2) {
   transform: scale(0.88);
+}
+
+@media (prefers-color-scheme: dark) {
+  .name {
+    filter: invert();
+  }
 }
 
 @keyframes sink {
