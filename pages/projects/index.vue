@@ -6,6 +6,12 @@
       <a target="_blank" href="https://remix-blog-peach.vercel.app">blog</a>
       <span>read about the lessons i've learnt as a developer</span>
 
+      <a target="_blank" href="https://homepage-ts.vercel.app/">homepage-v3</a>
+      <span
+        >running out of reasons to justify remaking the same homepage. this is
+        the one i'm currently maintaining</span
+      >
+
       <a target="_blank" href="https://homepage-react.vercel.app/"
         >homepage-v2</a
       >
