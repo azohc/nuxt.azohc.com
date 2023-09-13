@@ -3,10 +3,11 @@
     <header>
       <nav>
         <NuxtLink active-class="current-route" to="/">home</NuxtLink>
+        <NuxtLink active-class="current-route" to="/projects">
+          projects
+        </NuxtLink>
         <NuxtLink active-class="current-route" to="/about">about</NuxtLink>
-        <NuxtLink active-class="current-route" to="/projects"
-          >projects</NuxtLink
-        >
+        <a href="/juancs_cv.pdf" target="_blank">resume</a>
       </nav>
     </header>
     <NuxtPage></NuxtPage>

@@ -1,149 +1,45 @@
 <template>
   <main>
     <h1>about</h1>
-    <section>
-      <h2>education</h2>
-      <hr />
-      <DatedExperience
-        heading="harbour space university"
-        period="2022 - 2023"
-        subheading="master of front-end development"
-      >
-        <p>
-          as of the end of 2022, I've been working on design systems and vue
-          (with the composition api). since then, I have learnt to apply modern
-          web tooling to enhance the development process, and created small apps
-          with nuxt 3, react, nextjs 13, and remix. I'm currently diving deep
-          into nodejs, and up next is an angular course.
-        </p>
-      </DatedExperience>
-      <DatedExperience
-        heading="universidad complutense madrid"
-        period="2016 - 2020"
-        subheading="bachelor of computer science"
-      >
-        <ul>
-          <li>computation specialization</li>
-          <li>
-            erasmus at <strong>universiteit leiden</strong> during the second
-            semester of 2020
-          </li>
-          <li>
-            final project:
-            <a
-              target="_blank"
-              href="https://github.com/azohc/jucesampler/blob/master/memoire/mem-jcs.pdf"
-            >
-              a sampler plugin for digital audio workstations
-            </a>
-          </li>
-        </ul>
-      </DatedExperience>
-    </section>
-
-    <section>
-      <h2>technical skills</h2>
-      <hr />
-      backend: java, spring, nginx, sql, maven, python, c++, nodejs
-      <br />
-      frontend: javascript, html, css, typescript, angular, vue, nuxt 3, react,
-      nextjs 13, remix, graphql, storybook
-      <br />
-      misc: git, bash, agile, jira, maven, junit, mockito, jest, testing
-      library, tdd, hygraph
-    </section>
-
-    <section>
-      <h2>professional experience</h2>
-      <hr />
-      <DatedExperience
-        heading="spanish engineers"
-        period="may 2022 - november 2022"
-        subheading="full stack developer"
-      >
-        <ul>
-          <li>
-            documented the local environment configuration process for front-end
-            and full stack development
-          </li>
-          <li>
-            implemented new features on a web application featuring dashboards
-            to visualize data metrics across different periods of time
-          </li>
-          <li>
-            supported the creation of a proof of concept for the app's migration
-            from angularjs to angular 14
-          </li>
-        </ul>
-      </DatedExperience>
-      <DatedExperience
-        heading="guidewire software"
-        period="may 2021 - march 2022"
-        subheading="consultant developer"
-      >
-        <ul>
-          <li>
-            presented information gathered during the onboarding and training
-            and applied the constructive criticism and feedback
-          </li>
-          <li>
-            attained policycenter and integration certifications for
-            insurancesuite applications
-          </li>
-          <li>
-            participated in the upgrade process of a policycenter application
-          </li>
-          <li>
-            conducted demonstrations of the upgrade's incremental deliverables,
-            ensuring with the client that all of the older use cases were
-            covered in the new policycenter version
-          </li>
-        </ul>
-      </DatedExperience>
-      <DatedExperience
-        heading="solera"
-        period="november 2020 - march 2021"
-        subheading="software development engineer"
-      >
-        <ul>
-          <li>
-            delivered new features on a automobile lifecycle web application.
-            implementations covered the full stack, which was a java spring
-            micro services backend on the server side
-          </li>
-          <li>
-            actively participated in several scrum ceremonies, acquiring a
-            decent notion of what agile entails
-          </li>
-          <li>
-            was involved in code reviews, jenkins ci/cd configuration, and unit
-            testing
-          </li>
-        </ul>
-      </DatedExperience>
-      <DatedExperience
-        heading="itestra gmbh"
-        period="across 2019"
-        subheading="full-stack developer"
-      >
-        <ul>
-          <li>
-            collected foundation level skills in html, css, and typescript with
-            angular 9
-          </li>
-          <li>
-            identified the importance of communication when collaborating on
-            code
-          </li>
-
-          <li>
-            learned valuable lessons in communication by speaking my mind and by
-            muting it, by making mistakes in addition to providing my point of
-            views genuinely and concisely
-          </li>
-        </ul>
-      </DatedExperience>
-    </section>
+    <hr />
+    <p>
+      newly minted front-end developer with a master's from harbour space
+      university, I am passionate about crafting immersive web experiences
+      through meticulous and precise design implementation.
+    </p>
+    <p>
+      I've immersed myself in the dynamic world of web development, nurturing a
+      particular interest in the creative programming possibilities enabled by
+      webgl and three.js.
+    </p>
+    <p>
+      in this journey, I took the lead, working closely with a skilled designer
+      and a fellow developer. from a budding idea, we embarked on a path of
+      iterative development, culminating in a project that bears the hallmark of
+      each team member's dedication and input.
+    </p>
+    <p>
+      as I venture into a new phase of my career, I carry with me a resourceful
+      and entrepreneurial spirit, honed through experiences that demanded
+      initiative and independent problem-solving.
+    </p>
+    <p>
+      my approach to development is characterized by a commitment to open
+      communication and teamwork, values that I hold dear in fostering
+      environments where creativity can be translated sound technical solutions.
+    </p>
+    <p>
+      at my core, I'm an engineer with solid, yet ever-growing, understanding of
+      the prevalent development frameworks in today's tech landscape. while I
+      naturally gravitate towards technical challenges, I am not afraid to dip
+      my toes into the design pool, bringing a practical and analytical approach
+      to the creative process.
+    </p>
+    <p>
+      looking forward, I am eager to contribute this blend of technical skill
+      and creative zest to projects that resonate with my passion for building
+      beautiful and modern user experiences.
+    </p>
   </main>
 </template>
 
