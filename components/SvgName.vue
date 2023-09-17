@@ -94,13 +94,20 @@ const stop = () => {
 <style scoped>
 h1 {
   font-size: 3.3rem;
+  text-align: center;
 }
 
 .name {
-  display: inline-block;
-}
-.name > :nth-child(2) {
-  transform: scale(0.88);
+  display: flex;
+  flex-direction: column;
+
+  & > :nth-child(2) {
+    transform: scale(0.9);
+  }
+
+  > picture {
+    margin-inline: auto;
+  }
 }
 
 @keyframes sink {
@@ -117,5 +124,14 @@ h1 {
   animation-timing-function: cubic-bezier(0, 0, 0.58, 1);
   animation-iteration-count: infinite;
   animation-direction: alternate;
+}
+
+@media (min-width: 1024px) {
+  h1 {
+    text-align: start;
+  }
+  .name {
+    display: inline-block;
+  }
 }
 </style>

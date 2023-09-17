@@ -1,15 +1,6 @@
 <template>
   <div class="app-container">
-    <header>
-      <nav>
-        <NuxtLink active-class="current-route" to="/">home</NuxtLink>
-        <NuxtLink active-class="current-route" to="/projects">
-          projects
-        </NuxtLink>
-        <NuxtLink active-class="current-route" to="/about">about</NuxtLink>
-        <a href="/juancs_cv.pdf" target="_blank">resume</a>
-      </nav>
-    </header>
+    <NavBar />
     <NuxtPage></NuxtPage>
   </div>
 </template>
@@ -22,31 +13,10 @@
   font-weight: normal;
 }
 
-nav {
-  display: flex;
-  justify-content: flex-start;
-  gap: 1rem;
-}
-
-.current-route {
-  text-decoration: underline;
-}
-
 @media (min-width: 1024px) {
   .app-container {
-    display: grid;
-    grid-template-columns: 100px 650px;
-    gap: 3rem;
-  }
-
-  nav {
-    position: fixed;
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: flex-start;
-    margin-top: 2rem;
-    gap: 0.5rem;
+    gap: 3rem;
   }
 }
 </style>

@@ -42,13 +42,3 @@
     </p>
   </main>
 </template>
-
-<style scoped>
-section {
-  margin-bottom: 5rem;
-}
-
-article {
-  margin-bottom: 3rem;
-}
-</style>

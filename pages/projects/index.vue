@@ -3,94 +3,81 @@
     <h1>projects</h1>
     <hr />
     <div class="grid">
-      <!-- // TODO make a list of objs to iterate over and render here -->
-      <a
-        class="project-anchor"
-        target="_blank"
-        href="https://three-js-ball-wheat.vercel.app"
-      >
-        three-js-ball
-      </a>
-      <span> interactive webgl + three.js scene (wip) </span>
-
-      <a
-        class="project-anchor"
-        target="_blank"
-        href="https://sneky-nuxt.vercel.app"
-        >sneyk-v2</a
-      >
-      <span>
-        second approach at recreating snake, featuring a more serious design
-        (wip)
-      </span>
-
-      <a
-        class="project-anchor"
-        target="_blank"
-        href="https://remix-blog-peach.vercel.app"
-        >blog</a
-      >
-      <span>read about the lessons i've learnt as a developer</span>
-
-      <a
-        class="project-anchor"
-        target="_blank"
-        href="https://homepage-ts.vercel.app/"
-        >homepage-v3</a
-      >
-      <span>
-        running out of reasons to justify remaking the same homepage. this is
-        the one i'm currently maintaining
-      </span>
-
-      <a
-        class="project-anchor"
-        target="_blank"
-        href="https://homepage-react.vercel.app/"
-      >
-        homepage-v2
-      </a>
-      <span>
-        same dashboard concept, but with a more pronounced lean towards
-        styling</span
-      >
-
-      <a class="project-anchor" target="_blank" href="https://abonet.me/re-play"
-        >spotify-replay</a
-      >
-      <span>
-        a joint venture in recreating Spotify's design system, in collaboration
-        with <a href="https://abonet.me">Tony</a> and
-        <a href="https://www.rosejhh.dev">Rose</a>
-      </span>
-
-      <a
-        class="project-anchor"
-        target="_blank"
-        href="https://azohc.github.io/mwt"
-        >homepage-v1</a
-      >
-      <span>a widget based dashboard to use as a home or new tab page</span>
-
-      <a
-        class="project-anchor"
-        target="_blank"
-        href="https://nuxt-js-boilerplate.vercel.app"
-      >
-        sneyk-v1
-      </a>
-      <span>play or compete - but mainly stay alive</span>
-
-      <a
-        class="project-anchor"
-        target="_blank"
-        href="https://azohc.github.io/wat-do/"
-        >wat-do</a
-      >
-      <span>in case you're bored & dont know what to do</span>
+      <template v-for="p in projects">
+        <a :href="p.link" class="project-anchor">
+          {{ p.name }}
+        </a>
+        <span v-if="p.text">
+          {{ p.text }}
+        </span>
+        <component v-else-if="p.node" :is="p.node" />
+      </template>
     </div>
   </main>
 </template>
+
+<script setup lang="tsx">
+type Project = {
+  name: string;
+  text?: string;
+  link: string;
+  // @ts-ignore
+  node?: () => VNode;
+};
+const projects: Project[] = [
+  {
+    name: "three-js-ball",
+    text: "interactive webgl + three.js scene (wip)",
+    link: "https://three-js-ball-wheat.vercel.app",
+  },
+  {
+    name: "sneyk-v2",
+    link: "https://sneky-nuxt.vercel.app",
+    text: "second approach at recreating snake, featuring a more serious design (wip)",
+  },
+  {
+    name: "blog",
+    link: "https://remix-blog-peach.vercel.app",
+    text: "read about the lessons i've learnt as a developer",
+  },
+  {
+    name: "homepage-v3",
+    link: "https://homepage-ts.vercel.app/",
+    text: "running out of reasons to justify remaking the same homepage, this one is currently a wip",
+  },
+  {
+    name: "spotify-replay",
+    link: "https://abonet.me/re-play",
+    node: () =>
+      h("span", null, [
+        "a joint venture in recreating Spotify's design system, in collaboration with ",
+        h("a", { href: "https://abonet.me" }, "Tony"),
+        " and ",
+        h("a", { href: "https://www.rosejhh.dev" }, "Rose"),
+      ]),
+  },
+  {
+    name: "homepage-v2",
+    link: "https://homepage-react.vercel.app/",
+    text: "same dashboard concept, but with more efforts in styles and interactions",
+  },
+  {
+    name: "homepage-v1",
+    link: "https://azohc.github.io/mwt",
+    text: "a widget based dashboard to use as a home or new tab page",
+  },
+  {
+    name: "sneyk-v1",
+    link: "https://nuxt-js-boilerplate.vercel.app",
+    text: "play or compete - but mainly stay alive",
+  },
+  {
+    name: "wat-do",
+    link: "https://azohc.github.io/wat-do/",
+    text: "in case you're bored & dont know what to do",
+  },
+];
+</script>
 
 <style scoped>
 div.grid {
